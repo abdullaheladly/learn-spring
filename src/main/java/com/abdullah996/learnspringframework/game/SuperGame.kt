@@ -1,6 +1,6 @@
 package com.abdullah996.learnspringframework.game
 
-class MarioGame : GamingConsole {
+class SuperGame : GamingConsole{
     override fun up(){
         println("Jump")
     }
