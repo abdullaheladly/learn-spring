@@ -1,8 +1,10 @@
 package com.abdullah996.learnspringframework.game
 
-import com.abdullah996.learnspringframework.game.MarioGame
+import org.springframework.stereotype.Component
 
-class GameRunner(private val game: GamingConsole) {
+
+@Component
+open class GameRunner(private val game: GamingConsole) {
 
     fun run (){
         print("Runnung game : $game" )

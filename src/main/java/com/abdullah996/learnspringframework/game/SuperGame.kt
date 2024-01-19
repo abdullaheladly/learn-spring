@@ -1,6 +1,10 @@
 package com.abdullah996.learnspringframework.game
 
-class SuperGame : GamingConsole{
+import org.springframework.stereotype.Component
+
+
+@Component
+open class SuperGame : GamingConsole{
     override fun up(){
         println("Jump")
     }
