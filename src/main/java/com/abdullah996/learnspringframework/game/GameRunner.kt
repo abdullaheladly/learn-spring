@@ -1,8 +1,13 @@
 package com.abdullah996.learnspringframework.game
 
-import com.abdullah996.learnspringframework.game.MarioGame
+import org.springframework.beans.factory.annotation.Qualifier
+import org.springframework.stereotype.Component
 
-class GameRunner(private val game: GamingConsole) {
+
+
+
+@Component
+open class GameRunner( @Qualifier("thirdGameQualifier") private val game: GamingConsole) {
 
     fun run (){
         print("Runnung game : $game" )

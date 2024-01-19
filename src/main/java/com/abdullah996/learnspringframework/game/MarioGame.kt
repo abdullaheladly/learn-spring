@@ -1,6 +1,13 @@
 package com.abdullah996.learnspringframework.game
 
-class MarioGame : GamingConsole {
+import org.springframework.context.annotation.Configuration
+import org.springframework.context.annotation.Primary
+import org.springframework.stereotype.Component
+
+
+@Component
+@Primary
+open class MarioGame : GamingConsole {
     override fun up(){
         println("Jump")
     }
